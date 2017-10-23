@@ -1,9 +1,9 @@
 import { row, rows } from '../config/db';
 
 export function all() {
-    return rows('GetProducts');
+    return rows('GetCategories');
 }
 
 export function read(id: number) {
-    return row('SelectProduct', [id]);
+    return row('GetCategory', [id]);
 }
