@@ -8,4 +8,11 @@ angular.module('Store.directives', [])
             activePage: '='
         }
     };
+}])
+
+.directive('footerNav', [function() {
+    return {
+        templateUrl: 'directives/footer.html',
+        restrict: 'E',
+    };
 }]);
