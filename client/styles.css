@@ -1,13 +1,5 @@
-body {
-    padding: 0;
-    margin: 0;
-}
-
 .apparel-hero {
-    /* The image used */
     background-image: url("/images/covalence-store-apparel-hero.jpg");
-    
-    /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,10 +8,7 @@ body {
 }
 
 .misc-hero {
-    /* The image used */
     background-image: url("/images/covalence-store-misc-hero.jpg");
-    
-    /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,7 +16,7 @@ body {
     height: 25em;
 }
 
-.testing {
+.nav-color {
     background-color: rgba(34, 43, 46, 0.85);
 }
 

@@ -14,6 +14,10 @@ angular.module('Store', [
         templateUrl: 'views/welcome.html',
         controller: 'WelcomeController'
     })
+    .when('/products', {
+        templateUrl: 'views/product_list.html',
+        controller: 'ProductsController'
+    })
     .when('/apparel', {
         templateUrl: 'views/apparel.html',
         controller: 'ApparelController'
