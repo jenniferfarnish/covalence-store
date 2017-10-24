@@ -13,4 +13,4 @@ app.use(bodyParser.json());
 
 app.get('*', stateRouting);
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
