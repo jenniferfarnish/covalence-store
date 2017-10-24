@@ -1,2 +1,66 @@
 <main-navigation></main-navigation>
-<p>Checkout</p>
+<div class="container">
+    <div class="row">
+        <div class="col-7" class="checkout-form">
+            <h3>Your Billing Address</h3>
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="inputFirstName" placeholder="First">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="text" class="form-control" id="inputLastName" placeholder="Last">
+                  </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="inputCompany" placeholder="Company(optional)">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="inputPhone" placeholder="Phone">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-7">
+                        <input type="text" class="form-control" id="inputAddress1" placeholder="Address 1">
+                    </div>
+                    <div class="form-group col-md-5">
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Address 2(optional)">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                          <input type="text" class="form-control" id="inputCity" placeholder="City">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <select id="inputState" class="form-control">
+                                <option selected>State</option>
+                                <option>...</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <input type="text" class="form-control" id="inputZipCode" placeholder="Zip Code">
+                    </div>
+                    <div class="form-group col-md-8">
+                        <select id="inputCountry" class="form-control">
+                            <option selected>United States</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                </div>
+                <h3>Payment Method</h3>
+                <div class="text-center">
+                <button type="button" class="btn btn-info">Submit Your Order</button>
+                </div>
+        </div>
+        <div class="col-5" class="checkout-form">
+            <div class="text-center">
+                <h3>Your Shopping Cart</h3>
+                <button type="button" class="btn btn-outline-secondary">&lt;&lt; Cancel and continue Shopping</button>
+                <h3>Order Summary</h3>
+            </div>
+        </div>
+    </div>
+</div>
