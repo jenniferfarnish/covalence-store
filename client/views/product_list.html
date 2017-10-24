@@ -1,2 +1,6 @@
 <main-navigation></main-navigation>
 <p>product list</p>
+<div ng-repeat="product in products">
+    <p>{{ product.title }}</p>
+    <img ng-src="{{ product.imageurl }}" alt="">
+</div>
