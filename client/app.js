@@ -30,7 +30,7 @@ angular.module('Store', [
         templateUrl: 'views/contact_us.html',
         controller: 'ContactUsController'
     })
-    .when('/:theId', {
+    .when('/:id', {
         templateUrl: 'views/single_item.html',
         controller: 'SingleItemController'
     })
