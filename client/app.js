@@ -30,13 +30,13 @@ angular.module('Store', [
         templateUrl: 'views/contact_us.html',
         controller: 'ContactUsController'
     })
-    .when('/:id', {
-        templateUrl: 'views/single_item.html',
-        controller: 'SingleItemController'
-    })
     .when('/checkout', {
         templateUrl: 'views/checkout.html',
         controller: 'CheckoutController'
+    })
+    .when('/:id', {
+        templateUrl: 'views/single_item.html',
+        controller: 'SingleItemController'
     })
     .otherwise({
         redirectTo: '/'
