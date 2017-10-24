@@ -1,6 +1,7 @@
 .apparel-hero {
     background-image: url("/images/covalence-store-apparel-hero.jpg");
-    background-position: center;
+    /* background-position: center; */
+    background-position: 0% 25%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -20,3 +21,26 @@
     background-color: rgba(34, 43, 46, 0.85);
 }
 
+.circle {
+    border-radius: 50%;
+	width: 2em;
+    height: 2em; 
+    background-color: #3ab7c5;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    line-height: 2em;
+}
+
+.nav-text {
+    color: #3ab7c5;
+    text-transform: uppercase; 
+}
+
+a {
+    color: #3ab7c5;
+}
+
+.photo {
+    width: 20em;
+}
