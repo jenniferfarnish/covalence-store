@@ -19,4 +19,4 @@ angular.module('Store.controllers', [])
                 url: $location.url()
             });
         });
-    }])
+    }]);

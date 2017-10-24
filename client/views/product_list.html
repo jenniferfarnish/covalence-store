@@ -1,6 +1,8 @@
 <main-navigation></main-navigation>
 <p>product list</p>
 <div ng-repeat="product in products">
-    <p>{{ product.title }}</p>
+    <h2>{{ product.title }} {{ product.price | currency}}</h2>
     <img ng-src="{{ product.imageurl }}" alt="">
+    <p>{{ product.description }} </p>
+    <a href="/{{ product.id }}" type="submit">More Info</a>
 </div>
