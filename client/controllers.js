@@ -7,6 +7,15 @@ angular.module('Store.controllers', [])
             description: 'Items currently available for sale',
             url: $location.url()
         });
+
+        $scope.show = function(value) {
+            if(value == 2) {
+                return true;
+            }
+            if(value == 1) {
+                return false;
+            }
+        }
     }])
 
     .controller('SingleItemController', ['$scope', 'Product', '$routeParams', 'SEOService', '$location', function ($scope, Product, $routeParams, SEOService, $location) {

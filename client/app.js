@@ -20,11 +20,11 @@ angular.module('Store', [
     })
     .when('/apparel', {
         templateUrl: 'views/apparel.html',
-        controller: 'ApparelController'
+        controller: 'ProductsController'
     })
     .when('/misc', {
         templateUrl: 'views/misc.html',
-        controller: 'MiscListController',
+        controller: 'ProductsController',
     })
     .when('/contactus', {
         templateUrl: 'views/contact_us.html',

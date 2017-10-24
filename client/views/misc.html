@@ -1,4 +1,16 @@
 <main-navigation></main-navigation>
   <div class="jumbotron misc-hero jumbotron-fluid"></div>
 
+  <div class="container">
+      <div class="row">
+          <a ng-repeat= "product in products" ng-href="/{{ product.id }}" ng-show="show({{ product.categoryid }})">
+              <div class="col-sm">  
+                  <img ng-src="{{ product.imageurl }}" class="photo" alt="">
+                  <p>{{ product.title }}</p>
+                  <p>{{ product.price }}</p>
+              </div>
+          </a>
+      </div>
+  </div>  
+
   <footer-nav></footer-nav>

@@ -3,17 +3,15 @@
     </div>
 
     <div class="container">
-        <div class="row">
-            <div class="col-sm">
-            One of three columns
+            <div class="row">
+                <a ng-repeat= "product in products" ng-href="/{{ product.id }}" ng-show="!show({{ product.categoryid }})">
+                    <div class="col-sm">  
+                        <img ng-src="{{ product.imageurl }}" class="photo" alt="">
+                        <p>{{ product.title }}</p>
+                        <p>{{ product.price }}</p>
+                    </div>
+                </a>
             </div>
-            <div class="col-sm">
-            One of three columns
-            </div>
-            <div class="col-sm">
-            One of three columns
-            </div>
-        </div>
-    </div>
+     </div>
 
     <footer-nav></footer-nav>
