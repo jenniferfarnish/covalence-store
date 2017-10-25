@@ -104,3 +104,27 @@ color: #CCCCCC;
  
 }
 
+.form-control {
+    background-color:#E9E9E9;
+}
+
+.credit-cards {
+    height: 2em;
+}
+
+.payment-info {
+    background-color: lightgray;
+    vertical-align: middle;
+
+}
+
+#shopping-cart {
+    background-color: lightgray;   
+}
+
+#cancel {
+    background-color: white;
+    color: crimson;
+    border-color: crimson;
+
+}
