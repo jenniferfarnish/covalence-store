@@ -1,5 +1,13 @@
 angular.module('Store.controllers', [])
-    .controller('ProductsController', ['$scope', 'Product', 'SEOService', '$location', function ($scope, Product, SEOService, $location) {
+   
+.controller('WelcomeController', ['$scope', '$location', 'SEOService', function($scope, $location, SEOService) {
+    SEOService.setSEO({
+        title: 'Covalence Store',
+        description: 'Welconme to the Covalence Store',
+        url: $location.url()
+    });
+}])
+.controller('ProductsController', ['$scope', 'Product', 'SEOService', '$location', function ($scope, Product, SEOService, $location) {
         $scope.products = Product.query();
 
         SEOService.setSEO({
