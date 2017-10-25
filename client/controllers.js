@@ -28,4 +28,19 @@ angular.module('Store.controllers', [])
                 url: $location.url()
             });
         });
+    }])
+
+    .controller('ContactUsController', ['$scope', 'ContactForm', function($scope, ContactForm) {
+        $scope.send = function() {
+            let contact = new ContactForm({
+                from: $scope.email,
+                message: $scope.message
+            });
+
+            contact.$save(function() {
+                alert('Thank you for your message. We will get back with you shortly');
+            }, function(err) {
+                console.log(err);
+            });
+        }
     }]);

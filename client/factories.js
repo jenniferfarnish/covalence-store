@@ -6,3 +6,7 @@ angular.module('Store.factories', [])
 .factory('Category', ['$resource', function($resource) {
     return $resource('/api/categories/:id', {id: '@id'});
 }])
+
+.factory('ContactForm', ['$resource', function($resource) {
+    return $resource('/api/contactus/:id', {id: '@id'});
+}]);
