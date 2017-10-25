@@ -1,5 +1,13 @@
 angular.module('Store.controllers', [])
-    .controller('ProductsController', ['$scope', 'Product', 'SEOService', '$location', function ($scope, Product, SEOService, $location) {
+   
+.controller('WelcomeController', ['$scope', '$location', 'SEOService', function($scope, $location, SEOService) {
+    SEOService.setSEO({
+        title: 'Covalence Store',
+        description: 'Welconme to the Covalence Store',
+        url: $location.url()
+    });
+}])
+.controller('ProductsController', ['$scope', 'Product', 'SEOService', '$location', function ($scope, Product, SEOService, $location) {
         $scope.products = Product.query();
 
         SEOService.setSEO({
@@ -28,4 +36,19 @@ angular.module('Store.controllers', [])
                 url: $location.url()
             });
         });
+    }])
+
+    .controller('ContactUsController', ['$scope', 'ContactForm', function($scope, ContactForm) {
+        $scope.send = function() {
+            let contact = new ContactForm({
+                from: $scope.email,
+                message: $scope.message
+            });
+
+            contact.$save(function() {
+                alert('Thank you for your message. We will get back with you shortly');
+            }, function(err) {
+                console.log(err);
+            });
+        }
     }]);

@@ -5,6 +5,7 @@ import misc from './controllers/misc.ctrl';
 import apparel from './controllers/apparel.ctrl';
 import purchases from './controllers/purchases.ctrl';
 import purchprod from './controllers/purchprod.ctrl';
+import contactus from './controllers/contactus.ctrl';
 
 let router = express.Router();
 
@@ -15,5 +16,6 @@ router
 .use('/apparel', apparel)
 .use('/purchases', purchases)
 .use('/purchprod', purchprod)
+.use('/contactus', contactus)
 
 export default router;
