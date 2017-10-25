@@ -18,6 +18,13 @@ body {
     src: url("fonts/Brandon_reg.otf");
 }
 
+.h1 {
+    color: white;
+    font-family: "brandon-grotesque", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
 .misc-hero {
     background-image: url("/images/covalence-store-misc-hero.jpg");
     background-position: center;
@@ -60,6 +67,12 @@ a {
     width: 20em;
 }
 
+.text-right {
+margin: 0.63em;
+font-size: 18px;
+color: #CCCCCC;
+}
+
 .welcome-background {
     background: url('images/covalence-store-home-copy.jpg') no-repeat center center;
     background-size: cover;
@@ -84,19 +97,10 @@ a {
     height: auto;
 }
 
-.welcome-background .welcome-text {
+.welcome-background {
     color: white;
     padding-top: 250px;
-    padding-bottom: 250px;
-    font-family: "brandon-grotesque", sans-serif;
-    font-style: normal;
-    font-weight: 100;
+    padding-left: 5em;
+ 
 }
 
-.welcomebutton {
-    min-width: 200px;
-}
-
-.btn-lg {
-    min-width: 300px;
-}

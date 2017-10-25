@@ -1,8 +1,10 @@
 <main-navigation></main-navigation>
+<div class="jumbotron apparel-hero jumbotron-fluid">
+</div>
 <div class="container">
     <div class="row">
-        <a ng-repeat= "product in products" ng-href="/{{ product.id }}">
-            <div class="col-sm">  
+        <a ng-repeat="product in products" ng-href="/{{ product.id }}">
+            <div class="col-sm">
                 <img ng-src="{{ product.imageurl }}" class="photo" alt="">
                 <p>{{ product.title }}</p>
                 <p>{{ product.price | currency }}</p>
