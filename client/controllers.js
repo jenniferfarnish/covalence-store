@@ -51,4 +51,30 @@ angular.module('Store.controllers', [])
                 console.log(err);
             });
         }
+    }])
+
+    .controller('CheckoutController', ['$scope','Payment', '$location', function ($scope, Payment, $location) {
+        let elements = stripe.elements();
+        let card = elements.create('card');
+        card.mount('#card-field');
+        $scope.process = function () {
+            stripe.createToken(card)
+                .then((result) => {
+                    if (result.error) {
+                        $scope.error = result.error.message;
+                    } else {
+                       let p = new Payment ({
+                           token: result.token.id,
+                           amount: $scope.amount
+                       });
+                       p.$save(function() {
+                           alert('Thank you for your order!');
+                           $location.path('/');
+                       }, function(err) {
+                           console.log(err);
+                           $scope.error = err.message;
+                       });
+                    }
+                });
+        }
     }]);

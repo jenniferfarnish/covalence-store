@@ -9,4 +9,8 @@ angular.module('Store.factories', [])
 
 .factory('ContactForm', ['$resource', function($resource) {
     return $resource('/api/contactus/:id', {id: '@id'});
+}])
+
+.factory('Payment', ['$resource', function($resource) {
+    return $resource('/api/checkout/:id', {id: '@id'});
 }]);
