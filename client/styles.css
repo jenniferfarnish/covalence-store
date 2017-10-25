@@ -9,6 +9,15 @@
     height: 25em;
 }
 
+body {
+    font-family: "brandon-grotesque";
+}
+
+@font-face {
+    font-family: "brandon-grotesque";
+    src: url("fonts/Brandon_reg.otf");
+}
+
 .misc-hero {
     background-image: url("/images/covalence-store-misc-hero.jpg");
     background-position: center;
@@ -33,6 +42,11 @@
     line-height: 2em;
 }
 
+.navbar-text {
+    font-size: 18px;
+    font-family: "brandon-grotesque";
+}
+
 .nav-text {
     color: #3ab7c5;
     text-transform: uppercase; 
@@ -44,4 +58,45 @@ a {
 
 .photo {
     width: 20em;
+}
+
+.welcome-background {
+    background: url('images/covalence-store-home-copy.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    /*display: block;
+    max-width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 100vh;
+    
+    
+    /*no-repeat center center;
+    /*background-size: cover;
+    min-height: 100vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    */
+    width: 100%;
+    height: auto;
+}
+
+.welcome-background .welcome-text {
+    color: white;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    font-family: "brandon-grotesque", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.welcomebutton {
+    min-width: 200px;
+}
+
+.btn-lg {
+    min-width: 300px;
 }
