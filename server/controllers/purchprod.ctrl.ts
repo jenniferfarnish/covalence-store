@@ -4,7 +4,7 @@ import * as procedures from '../procedures/purchprod.proc';
 const router = Router();
 
 router.post('/', (req, res) => { 
-    procedures.create(req.body.id, req.body.price, req.body.stripetransactionid)
+    procedures.create(req.body.price, req.body.stripetransactionid)
     .then((success) => {
         console.log('Added new purchase')
         res.send(success);
