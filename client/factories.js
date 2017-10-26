@@ -12,5 +12,5 @@ angular.module('Store.factories', [])
 }])
 
 .factory('Payment', ['$resource', function($resource) {
-    return $resource('/api/checkout/:id', {id: '@id'});
+    return $resource('/api/purchases/:id', {id: '@id'});
 }]);

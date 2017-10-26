@@ -109,22 +109,35 @@ color: #CCCCCC;
 }
 
 .credit-cards {
-    height: 2em;
+    height: 1.5em;
 }
 
-.payment-info {
-    background-color: lightgray;
+#payment-info {
+    background-color: #E9E9E9;
     vertical-align: middle;
+    height: 3em;
+    line-height: 3em;
+    padding-left:  1em;
 
 }
 
 #shopping-cart {
-    background-color: lightgray;   
+    background-color: #E9E9E9;   
 }
 
 #cancel {
     background-color: white;
     color: crimson;
-    border-color: crimson;
+    border-color: darkgray;
+    width: 75%;
 
+}
+
+#credit-card-info {
+    background-color: whitesmoke;
+}
+
+#submit-button {
+    margin: 2em;
+    width: 30%;
 }
