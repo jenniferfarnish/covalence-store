@@ -7,7 +7,7 @@
               <div class="col-sm">  
                   <img ng-src="{{ product.imageurl }}" class="photo" alt="">
                   <p>{{ product.title }}</p>
-                  <p>{{ product.price }}</p>
+                  <p>{{ product.price | curreny }}</p>
               </div>
           </a>
       </div>
