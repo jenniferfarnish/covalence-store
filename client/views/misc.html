@@ -1,16 +1,20 @@
 <main-navigation active-page="'misc'"></main-navigation>
-  <div class="jumbotron misc-hero jumbotron-fluid"></div>
+<div class="jumbotron misc-hero jumbotron-fluid"></div>
 
-  <div class="container">
-      <div class="row">
-          <a ng-repeat= "product in products" ng-href="/{{ product.id }}" ng-show="show({{ product.categoryid }})">
-              <div class="col-sm">  
-                  <img ng-src="{{ product.imageurl }}" class="photo" alt="">
-                  <p>{{ product.title }}</p>
-                  <p>{{ product.price | currency }}</p>
-              </div>
-          </a>
-      </div>
-  </div>  
+<div class="container">
+    <div class="row">
+        <a ng-repeat="product in products" ng-href="/{{ product.id }}" ng-show="show({{ product.categoryid }})">
+            <div class="col-sm">
+                <img ng-src="{{ product.imageurl }}" class="photo" alt="">
+                <div class="row">
+                    <div class="col-sm-6" id="product-title">{{ product.title }}</div>
+                    <div class="col-sm-6">
+                        <span class="float-right" id="product-price">{{ product.price | currency }}</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
 
-  <footer-nav></footer-nav>
+<footer-nav></footer-nav>

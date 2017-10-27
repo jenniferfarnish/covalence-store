@@ -169,6 +169,10 @@ li a {
     font-weight: bold;
 }
 
+a:hover {
+text-decoration: none;
+}
+
 .placeholder {
     font-size: 12px;
 }

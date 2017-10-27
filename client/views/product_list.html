@@ -5,10 +5,14 @@
     <div class="row">
         <a ng-repeat="product in products" ng-href="/{{ product.id }}">
             <div class="col-sm">
-                <img ng-src="{{ product.imageurl }}" class="photo" alt="">
-                <p>{{ product.title }}</p>
-                <p>{{ product.price | currency }}</p>
-            </div>
+                    <img ng-src="{{ product.imageurl }}" class="photo" alt="">
+                    <div class="row">
+                        <div class="col-sm-6" id="product-title">{{ product.title }}</div>
+                        <div class="col-sm-6">
+                            <span class="float-right" id="product-price">{{ product.price | currency }}</span>
+                        </div>
+                    </div>
+                </div>
         </a>
     </div>
 </div>
