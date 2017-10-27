@@ -90,7 +90,7 @@ a.nav-link:active:focus {
 }
 
 .nav-text {
-    /*color: #39B6C5;*/
+    color: #39B6C5;
     text-transform: uppercase; 
 }
 
@@ -136,7 +136,6 @@ li a {
  
 }
 
-<<<<<<< HEAD
 .navbar-nav .active>.nav-link {
     text-decoration: none;
     font-weight: bold;
@@ -189,7 +188,6 @@ li a {
     border-left: 2px solid rgb(67, 182, 200);
     border-right: 2px solid rgb(67 182, 200);
 }
-=======
 .form-control {
     background-color:#E9E9E9;
 }
@@ -227,4 +225,3 @@ li a {
     margin: 2em;
     width: 30%;
 }
->>>>>>> 8a3e2e46b1f70bcfa6b7c1423baf893c2681cd38
