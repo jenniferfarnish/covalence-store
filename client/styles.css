@@ -62,10 +62,10 @@ html {
     margin: 0.063em;
 }
 
-/*a.nav-link {
+a.nav-link {
 color: #56A2B5 !important;
 }
-
+/*
 .nav-tabs .nav-link:active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
