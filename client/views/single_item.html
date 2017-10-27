@@ -1,8 +1,15 @@
 <main-navigation></main-navigation>
-<p>Single Item</p>
-<div>
-    <img ng-src="{{ product.imageurl }}" class="photo" alt="">
-    <p>{{ product.title }} {{ product.price | currency}}</p>
-    <p>{{ product.description }} </p>
-</div>
-<footer-nav></footer-nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8" id="single-item-image-box">
+            <img ng-src="{{ product.imageurl }}">
+        </div>
+        <div class="col-md-4" id="single-item-text-box">
+                        <h1 id="product-price">${{ product.price }}</h1>
+                    <h1 id="product-title">{{ product.title }}</h1>
+                    <p>{{ product.description }}</p>
+                    <button class="btn btn-info">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+    <footer-nav class="fixed-bottom"></footer-nav>

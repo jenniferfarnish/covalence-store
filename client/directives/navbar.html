@@ -1,5 +1,5 @@
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-md navbar-dark fixed-top nav-color">
+<nav class="navbar navbar-expand-md fixed-top nav-color">
 	<!-- Covalence logo -->
     <a class="navbar-brand" href="/">
         <img src="/images/Newlogo.png" width="200" height="35" alt="">
@@ -7,21 +7,22 @@
 	<!-- Hamburger toggle -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-	</button>
+    </button>
+    <!--<span class="divider-vertical"></span>-->
 	<!-- Menu List -->
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-        	<li class="nav-item nav-text">
+        	<li class="nav-item nav-text {{ activePage === 'apparel' ? 'active' : '' }}">
               	<a class="nav-link" href="/apparel">Apparel</a>
             </li>
-            <li class="nav-item nav-text">
+            <li class="nav-item nav-text {{ activePage === 'misc' ? 'active' : '' }}">
                 <a class="nav-link" href="/misc">Misc</a>
             </li>
-            <li class="nav-item nav-text">
+            <li class="nav-item nav-text {{ activePage === 'contactus' ? 'active' : '' }}">
                 <a class="nav-link" href="/contactus">Contact Us</a>
             </li>
         </ul>
-        <span class="navbar-text">Cart</span>
+        <p class="text-right" id="navbar-text">Cart</p>
         <a href="/checkout"><div class="circle">2<div></a>
     </div>
 </nav>
