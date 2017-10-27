@@ -53,7 +53,7 @@ angular.module('Store.controllers', [])
         }
     }])
 
-    .controller('CheckoutController', ['$scope','Payment', '$location', function ($scope, Payment, $location) {
+    .controller('CheckoutController', ['$scope','Payment', 'PurchProd', '$location', function ($scope, Payment, PurchProd, $location) {
         let elements = stripe.elements();
         let card = elements.create('card');
         card.mount('#card-field');
@@ -69,11 +69,18 @@ angular.module('Store.controllers', [])
                        });
                        p.$save(function() {
                            alert('Thank you for your order!');
-                           $location.path('/');
-                       }, function(err) {
-                           console.log(err);
-                           $scope.error = err.message;
-                       });
+                       }).then(function() {
+                           let purchase = new PurchProd ({
+                               price: $scope.amount,
+                               stripetransactionid: result.token.id
+                           });
+                           purchase.$save(function(success) {
+                            console.log(success);
+                            //$location.path('/');
+                            }, function(err) {
+                            console.log(err);
+                            });
+                        })
                     }
                 });
         }

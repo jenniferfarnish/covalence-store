@@ -4,7 +4,7 @@ import * as stripeSvc from '../services/stripe.svc';
 const router = Router();
 
 router.post('/', (req, res) => { // /purchases
-    let amount = Number(req.body.amount) * 100;
+    let amount = Number(req.body.amount);
     stripeSvc.charge(req.body.token, amount)
     .then((success) => {
         res.sendStatus(204);

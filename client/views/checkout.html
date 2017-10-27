@@ -1,96 +1,178 @@
+<!-- Push content below navbar -->
 <style>
 body { 
     padding-top: 10em; 
+    color: gray;
+}
+h3 {
+    color: darkslategray;
+    font-weight: bold;
 }          
 </style>
 
+<!-- Navbar -->
 <main-navigation></main-navigation>
-<div class="container checkout">
+
+<!-- Checkout container -->
+<div class="container checkout border rounded checkout">
     <div class="row">
-        <div class="col-7" class="checkout-form">
+
+        <!-- Half that contains forms -->
+        <div class="col-7" class="checkout-form" style="padding:2em">
+
+            <!--Email Container -->
+            <div class="container">
+                <div class="row">   
+                    <div class="col-1">
+                        <div class="circle">1</div>
+                    </div>
+                    <h3 class="col-11">Your Email</h3>
+                </div>
+
+                <form>
+                    <div class="row">
+                        <div class="col-sm-2"></div>
+                        <div class="form-group col-sm-10">
+                            <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="you@email.com">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Billing Address Container -->
+            <div class="container">
+                <div class="row">   
+                    <div class="col-1">
+                        <div class="circle">2</div>
+                    </div>
+                    <h3 class="col-11">Your Billing Address</h3>
+                </div>
         
-    <div class="row">   
-            <div class="col-1">
-                <div class="circle">1</div>
-            </div>
-            <h3 class="col-11">Your Billing Address</h3>
-        </div>
-        <form>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control col-md-12" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="you@email.com">
-        </div>
-            <div class="row">   
-                <div class="col-1">
-                    <div class="circle">1</div>
-                </div>
-                <h3 class="col-11">Your Billing Address</h3>
-            </div>
-    
-            <form>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <input type="text" class="form-control" id="inputFirstName" placeholder="First">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <input type="text" class="form-control" id="inputLastName" placeholder="Last">
-                  </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <input type="text" class="form-control" id="inputCompany" placeholder="Company(optional)">
+                <form>
+                    <div class="form-row">
+                        <div class="col-sm-2">Name</div> 
+                        <div class="form-group col-sm-5">
+                            <input type="text" class="form-control form-control-sm" id="inputFirstName" placeholder="First">
+                        </div>
+                        <div class="form-group col-sm-5">
+                            <input type="text" class="form-control form-control-sm" id="inputLastName" placeholder="Last">
+                        </div>
                     </div>
-                    <div class="form-group col-md-6">
-                        <input type="text" class="form-control" id="inputPhone" placeholder="Phone">
+                    <div class="form-row">
+                        <div class="col-sm-2"></div>
+                        <div class="form-group col-md-5">
+                            <input type="text" class="form-control form-control-sm" id="inputCompany" placeholder="Company(optional)">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <input type="text" class="form-control form-control-sm" id="inputPhone" placeholder="Phone">
+                        </div>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-7">
-                        <input type="text" class="form-control" id="inputAddress1" placeholder="Address 1">
+                    <div class="form-row">
+                        <label class="col-sm-2 col-form-label">Address</label>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control form-control-sm" id="inputAddress1" placeholder="Address 1">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <input type="text" class="form-control form-control-sm" id="inputAddress2" placeholder="Address 2(optional)">
+                        </div>
                     </div>
-                    <div class="form-group col-md-5">
-                        <input type="text" class="form-control" id="inputAddress2" placeholder="Address 2(optional)">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                          <input type="text" class="form-control" id="inputCity" placeholder="City">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <select id="inputState" class="form-control">
+                    <div class="form-row">
+                        <div class="col-sm-2"></div>
+                        <div class="form-group col-md-5">
+                            <input type="text" class="form-control form-control-sm" id="inputCity" placeholder="City">
+                        </div>
+                        <div class="form-group col-md-5">
+                            <select id="inputState" class="form-control form-control-sm">
                                 <option selected>State</option>
                                 <option>...</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <input type="text" class="form-control" id="inputZipCode" placeholder="Zip Code">
-                    </div>
-                    <div class="form-group col-md-8">
-                        <select id="inputCountry" class="form-control">
-                            <option selected>United States</option>
-                            <option>...</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">   
-                        <div class="col-1">
-                            <div class="circle">2</div>
+                            </select>
                         </div>
-                        <h3 class="col-11">Payment Method</h3>
                     </div>
+                    <div class="form-row">
+                        <div class="col-sm-2"></div>
+                        <div class="form-group col-md-3">
+                            <input type="text" class="form-control form-control-sm" id="inputZipCode" placeholder="Zip Code">
+                        </div>
+                        <div class="form-group col-md-7">
+                            <select id="inputCountry" class="form-control form-control-sm">
+                                <option selected>United States</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Payment Method Container -->
+            <div class="container">
+                <div class="row">   
+                    <div class="col-1">
+                        <div class="circle">3</div>
+                    </div>
+                    <h3 class="col-11">Payment Method</h3>
+                </div>
+                    
+                <div class="row justify-content-end">
+                    <div class="col-8">
+                        <div class="row" id="payment-info">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                    Credit Card                                 
+                                </label>
+                                <img class="credit-cards" src="/images/visa.png" alt="">
+                                <img class="credit-cards" src="/images/mastercard.png" alt="">
+                                <img class="credit-cards" src="/images/american-express.png" alt="">
+                                <img class="credit-cards" src="/images/discover.png" alt="">
+                            </div>
+                        </div>
+                        <div class="row" id="credit-card-info">
+                               
+                        </div>
+                                <div class="row">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                        <img class="credit-cards" src="/images/paypal.png" alt="">
+                                        Pay with Paypal
+                                    </label>
+                                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 
-                <div class="text-center">
-                <button type="button" class="btn btn-info">Submit Your Order</button>
+                <div class="container">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-info" id="submit-button">Submit Your Order</button>
+                    </div>
                 </div>
         </div>
-        <div class="col-5" class="checkout-form">
+
+        <!-- half that contains shopping cart -->
+        <div class="col-5" class="checkout-form" style="padding:2em" id="shopping-cart">
             <div class="text-center">
                 <h3>Your Shopping Cart</h3>
-                <button type="button" class="btn btn-outline-secondary">&lt;&lt; Cancel and continue Shopping</button>
+                <button type="button" class="btn btn-outline-secondary" id="cancel">&lt;&lt; Cancel and continue Shopping</button>
                 <h3>Order Summary</h3>
             </div>
         </div>
     </div>
 </div>
+
+<div class="container">
+    <form ng-submit="process()">
+        <div class="form-group">
+            <label for="amount-field">Amount</label>
+            <input id="amount-field" type="number" class="form-control" ng-model="amount" required>
+        </div>
+        <div class="form-group">
+            <label for="card-field">Credit Card</label>
+            <div id="card-field" class="form-control"></div>
+        </div>
+        <p>{{ error }}</p>
+        <input type="submit" class="btn btn-primary btn-lg" value="Donate">
+    </form>
+</div>
+
+<footer-nav></footer-nav>

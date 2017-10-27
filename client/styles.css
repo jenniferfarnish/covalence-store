@@ -136,6 +136,7 @@ li a {
  
 }
 
+<<<<<<< HEAD
 .navbar-nav .active>.nav-link {
     text-decoration: none;
     font-weight: bold;
@@ -188,3 +189,42 @@ li a {
     border-left: 2px solid rgb(67, 182, 200);
     border-right: 2px solid rgb(67 182, 200);
 }
+=======
+.form-control {
+    background-color:#E9E9E9;
+}
+
+.credit-cards {
+    height: 1.5em;
+}
+
+#payment-info {
+    background-color: #E9E9E9;
+    vertical-align: middle;
+    height: 3em;
+    line-height: 3em;
+    padding-left:  1em;
+
+}
+
+#shopping-cart {
+    background-color: #E9E9E9;   
+}
+
+#cancel {
+    background-color: white;
+    color: crimson;
+    border-color: darkgray;
+    width: 75%;
+
+}
+
+#credit-card-info {
+    background-color: whitesmoke;
+}
+
+#submit-button {
+    margin: 2em;
+    width: 30%;
+}
+>>>>>>> 8a3e2e46b1f70bcfa6b7c1423baf893c2681cd38
