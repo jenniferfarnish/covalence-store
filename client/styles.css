@@ -11,31 +11,7 @@
 
 body {
     font-family: "brandon-grotesque";
-}
-
-@font-face {
-    font-family: "brandon-grotesque";
-    src: url("fonts/Brandon_reg.otf");
-}
-
-.h1 {
-    color: white;
-    font-family: "brandon-grotesque", sans-serif;
-    font-style: normal;
-    font-weight: 100;
-}
-
-.misc-hero {
-    background-image: url("/images/covalence-store-misc-hero.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 25em;
-}
-
-.nav-color {
-    background-color: rgba(34, 43, 46, 0.85);
+    height: 100%;
 }
 
 .circle {
@@ -49,29 +25,85 @@ body {
     line-height: 2em;
 }
 
+@font-face {
+    font-family: "brandon-grotesque";
+    src: url("fonts/Brandon_reg.otf");
+}
+
+#footer-text {
+    margin: 0.63em;
+    font-size: 18px;
+    color: #CCCCCC;
+    }
+
+.h1 {
+    color: white;
+    font-family: "brandon-grotesque", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+}
+
+html {
+    cursor: url(images/cursor.png) 0 0, auto;
+}
+
+
+.misc-hero {
+    background-image: url("/images/covalence-store-misc-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 25em;
+}
+
+#navbar-text {
+    color: #FFFFFF;
+    margin: 0.063em;
+}
+
+/*a.nav-link {
+color: #56A2B5 !important;
+}
+
+.nav-tabs .nav-link:active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #495057;
+  background-color: #fff;
+  border-color: #ddd #ddd #fff;
+}
+
+
+a.nav-link:active:focus {
+    color: white !important;
+    text-decoration: underline !important;
+    text-decoration-color: white !important;
+}
+*/
+.nav-color {
+    background-color: rgba(34, 43, 46, 0.85);
+}
+
 .navbar-text {
     font-size: 18px;
     font-family: "brandon-grotesque";
 }
 
 .nav-text {
-    color: #3ab7c5;
+    /*color: #39B6C5;*/
     text-transform: uppercase; 
 }
 
-a {
+li a {
     color: #3ab7c5;
+    text-transform: uppercase;
 }
 
 .photo {
     width: 20em;
 }
 
-.text-right {
-margin: 0.63em;
-font-size: 18px;
-color: #CCCCCC;
-}
+
 
 .welcome-background {
     background: url('images/covalence-store-home-copy.jpg') no-repeat center center;
@@ -104,3 +136,55 @@ color: #CCCCCC;
  
 }
 
+.navbar-nav .active>.nav-link {
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0px;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    color: white !important;
+    background-color: transparent !important;
+}
+
+/*Single Item CSS*/
+#single-item-image-box {
+    padding-top: 6.25em;
+    padding-bottom: 6.25em;
+
+}
+
+#single-item-text-box {
+    padding-top: 10em;
+    padding-bottom: 6.25em;
+}
+
+#product-price {
+    color: #3ab7c5;
+    font-weight: bold;
+}
+
+#product-title {
+    color: #454B4D;
+    font-weight: bold;
+}
+
+.placeholder {
+    font-size: 12px;
+}
+
+.misc-product-title {
+    width: 150px;
+}
+.contact-us {
+    padding-top: 6.25em; 
+}
+
+/*Nav Bar CSS*/
+
+.divider-vertical {
+    height: 50px;
+    margin: 0 9px;
+    border-left: 2px solid rgb(67, 182, 200);
+    border-right: 2px solid rgb(67 182, 200);
+}
