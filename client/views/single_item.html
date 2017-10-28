@@ -1,19 +1,19 @@
 <main-navigation></main-navigation>
 <style>
         body {
-            padding-top: 10em; 
+            padding-top: 8em; 
         }          
         </style>
-<div class="container-fluid">
+<div class="container product-container">
     <div class="row">
-        <div class="col-md-8" id="single-item-image-box">
-            <img ng-src="{{ product.imageurl }}">
+        <div class="col-sm-7" id="single-item-image-box">
+            <img ng-src="{{ product.imageurl }}" class="product-image">
         </div>
-        <div class="col-md-4" id="single-item-text-box">
+        <div class="col-sm-5" id="single-item-text-box">
                         <h1 id="product-price">${{ product.price }}</h1>
                     <h1 id="product-title">{{ product.title }}</h1>
                     <p>{{ product.description }}</p>
-                    <button class="btn btn-info">ADD TO CART</button>
+                    <button class="btn btn-info product-cart">ADD TO CART</button>
             </div>
         </div>
     </div>
