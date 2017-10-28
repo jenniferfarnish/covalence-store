@@ -76,7 +76,7 @@ angular.module('Store.controllers', [])
                            });
                            purchase.$save(function(success) {
                             console.log(success);
-                            //$location.path('/');
+                            $location.path('/');
                             }, function(err) {
                             console.log(err);
                             });
