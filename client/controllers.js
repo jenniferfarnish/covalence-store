@@ -27,6 +27,8 @@ angular.module('Store.controllers', [])
     }])
 
     .controller('SingleItemController', ['$scope', 'Product', '$routeParams', 'SEOService', '$location', function ($scope, Product, $routeParams, SEOService, $location) {
+        //$scope.itemsInCart = JSON.parse(localStorage.getItem("allItems"));
+        
         $scope.product = Product.get({ id: $routeParams.id }, function (success) {
             SEOService.setSEO({
                 title: $scope.product.title,
@@ -36,6 +38,24 @@ angular.module('Store.controllers', [])
                 url: $location.url()
             });
         });
+
+        // $scope.add = function() {
+        //     var existingItems = JSON.parse(localStorage.getItem("allItems"));
+        //     if(existingItems == null) existingItems = [];
+
+        //     let item = $routeParams.id;
+        //     localStorage.setItem("item", JSON.stringify(item));
+        //     existingItems.push(item);
+        //     localStorage.setItem("allItems", JSON.stringify(existingItems));
+        //     console.log(existingItems);
+        //     console.log(existingItems.length);
+
+        // }
+
+        // $scope.remove = function() {
+            
+        // }
+
     }])
 
     .controller('ContactUsController', ['$scope', 'ContactForm', function($scope, ContactForm) {
