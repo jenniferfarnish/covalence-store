@@ -1,20 +1,24 @@
 <main-navigation active-page="'misc'"></main-navigation>
-<div class="jumbotron misc-hero jumbotron-fluid"></div>
 
-<div class="container">
+<div class="container-fluid">
+        <img src="/images/covalence-store-misc-hero.jpg" class="img-fluid" alt="">
+</div>
+
+<div class="container products-container">
     <div class="row">
-        <a ng-repeat="product in products" ng-href="/{{ product.id }}" ng-show="show({{ product.categoryid }})">
-            <div class="col-sm">
-                <img ng-src="{{ product.imageurl }}" class="photo" alt="">
+            <div class="col-sm-4 product" ng-repeat="product in products" ng-show="show({{ product.categoryid }})">
+                    <a ng-href="/{{ product.id }}">   
+                        <img ng-src="{{ product.imageurl }}" class="photo" alt="">
+                    </a>
                 <div class="row">
-                    <div class="col-sm-6" id="product-title">{{ product.title }}</div>
-                    <div class="col-sm-6">
-                        <span class="float-right" id="product-price">{{ product.price | currency }}</span>
+                    <div class="col-9" id="product-title">{{ product.title }}</div>
+                    <div class="col-3">
+                        <span class="float-right" id="product-price">{{ product.price | currency:USD$:0 }}</span>
                     </div>
                 </div>
             </div>
-        </a>
     </div>
 </div>
+
 
 <footer-nav></footer-nav>

@@ -1,14 +1,4 @@
 
-.apparel-hero {
-    background-image: url("/images/covalence-store-apparel-hero.jpg");
-    /* background-position: center; */
-    background-position: 0% 25%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 25em;
-}
-
 body {
     font-family: "brandon-grotesque";
     height: 100%;
@@ -47,14 +37,17 @@ html {
     cursor: url(images/cursor.png) 0 0, auto;
 }
 
+/* Navbar */
 
-.misc-hero {
-    background-image: url("/images/covalence-store-misc-hero.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    height: 25em;
+.navbar-nav .active>.nav-link {
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0px;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    color: white !important;
+    background-color: transparent !important;
 }
 
 #navbar-text {
@@ -65,21 +58,7 @@ html {
 a.nav-link {
 color: #56A2B5 !important;
 }
-/*
-.nav-tabs .nav-link:active,
-.nav-tabs .nav-item.show .nav-link {
-  color: #495057;
-  background-color: #fff;
-  border-color: #ddd #ddd #fff;
-}
 
-
-a.nav-link:active:focus {
-    color: white !important;
-    text-decoration: underline !important;
-    text-decoration-color: white !important;
-}
-*/
 .nav-color {
     background-color: rgba(34, 43, 46, 0.85);
 }
@@ -99,11 +78,8 @@ li a {
     text-transform: uppercase;
 }
 
-.photo {
-    width: 20em;
-}
 
-
+/* Welcome Page */
 
 .welcome-background {
     background: url('images/covalence-store-home-copy.jpg') no-repeat center center;
@@ -136,35 +112,23 @@ li a {
  
 }
 
-.navbar-nav .active>.nav-link {
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 0px;
-    border-bottom-width: 4px;
-    border-bottom-style: solid;
-    border-bottom-color: white;
-    color: white !important;
-    background-color: transparent !important;
-}
-
-/*Single Item CSS*/
-#single-item-image-box {
-
-
-}
-
-#single-item-text-box {
-
-}
+/* Products */
 
 #product-price {
     color: #3ab7c5;
     font-weight: bold;
+    font-size: 1.5em;
 }
 
 #product-title {
     color: #454B4D;
     font-weight: bold;
+    font-size: 1.5em;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
 }
 
 a:hover {
@@ -315,3 +279,18 @@ text-decoration: none;
     width: 75%;
     letter-spacing: 2px;
 }
+
+.container-fluid {
+    padding-right:0;
+    padding-left:0;
+    margin-right:auto;
+    margin-left:auto
+ }
+
+ .products-container {
+     margin-top: 4em; 
+ }
+
+ .product {
+    padding-bottom: 3em;
+ }
