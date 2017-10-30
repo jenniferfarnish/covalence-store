@@ -9,8 +9,11 @@ import api from './api';
 let clientPath = path.join(__dirname, '../client');
 
 let app = express(); 
+const prerender = require('prerender-node');
 
-app.use(require('prerender-node').set('prerenderServiceUrl', 'http://localhost:1337/').set('prerenderToken', 'YOUR_TOKEN'));
+prerender.set('prerenderToken', process.env.PRERENDER_TOKEN);
+
+app.use(prerender);
 
 app.use(express.static(clientPath));
 
