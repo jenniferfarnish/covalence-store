@@ -1,28 +1,78 @@
-<!-- Push content below navbar -->
-<style>
-h3 {
-    color: darkslategray;
-    font-weight: bold;
-}          
-</style>
-
 <!-- Navbar -->
 <main-navigation></main-navigation>
 
 <!-- Checkout container -->
 <div class="container checkout border rounded checkout">
-    <div class="row">
+    <div class="row flex-row-reverse">
+
+        <!-- half that contains shopping cart -->
+        <div class="col-sm-5" class="checkout-form" style="padding:2em" id="shopping-cart">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h3>Your Shopping Cart</h3>
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <button type="button" class="btn btn-outline-secondary" id="cancel">&lt;&lt; Cancel and continue Shopping</button>
+                </div>
+            </div>
+
+            <div class="row item-preview">
+                <div class="col-2 checkout-image">
+                    <img class="img-fluid" src="/images/covalence-store-misc-14.png" alt="">
+                </div>
+                <div class="col-7">
+                    <p class="checkout-title">Symbols Coffee Mug</p>
+                    <button type="button" class="remove-button-checkout">remove</button>
+                </div>
+                <div class="col-3 text-right checkout-price">
+                    $22
+                </div>
+            </div>
+            <div class="row item-preview">
+                <div class="col-2 checkout-image">
+                    <img class="img-fluid" src="/images/covalence-store-apparel-09.png" alt="">
+                </div>
+                <div class="col-7">
+                    <p class="checkout-title">Grey Logo Tee</p>
+                    <button type="button" class="remove-button-checkout">remove</button>
+                </div>
+                <div class="col-3 text-right checkout-price">
+                    $25
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h3>Order Summary</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 text-center">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col checkout-title text-left">
+                    Order Total
+                </div>
+                <div class="col checkout-title text-right">
+                    $47
+                </div>
+            </div>
+            
+        </div>
 
         <!-- Half that contains forms -->
         <div class="col-sm-7" class="checkout-form" style="padding:2em">
-
+                
             <!--Email Container -->
             <div class="container">
                 <div class="row">   
                     <div class="col-1">
                         <div class="circle">1</div>
                     </div>
-                    <h3 class="col-11">Your Email</h3>
+                    <h3 class="col-11 checkout-heading">Your Email</h3>
                 </div>
 
                 <form>
@@ -41,7 +91,7 @@ h3 {
                     <div class="col-1">
                         <div class="circle">2</div>
                     </div>
-                    <h3 class="col-11">Your Billing Address</h3>
+                    <h3 class="col-11 checkout-heading">Your Billing Address</h3>
                 </div>
         
                 <form>
@@ -109,9 +159,9 @@ h3 {
                     <div class="col-1">
                         <div class="circle">3</div>
                     </div>
-                    <h3 class="col-11">Payment Method</h3>
+                    <h3 class="col-11 checkout-heading">Payment Method</h3>
                 </div>
-                   
+                    
                 <div class="row justify-content-end">
                     <div class="col-sm-8">
                         <div class="row" id="payment-info">
@@ -152,49 +202,13 @@ h3 {
                 </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 text-center" id="submit-button">
+                    <div class="col-sm-12 text-center submit-container">
                         <p>Almost done! Click the submit button to process your payment.</p>
-                        <input type="submit" class="btn btn-info" value="Submit Your Order">
+                        <input type="submit" class="btn btn-info" id="submit-button" value="Submit Your Order">
                     </div>
                 </div>
             </div>
         </form>
-        </div>
-
-        <!-- half that contains shopping cart -->
-        <div class="col-sm-5" class="checkout-form" style="padding:2em" id="shopping-cart">
-            <div class="text-center">
-                <h3>Your Shopping Cart</h3>
-                
-                <button type="button" class="btn btn-outline-secondary" id="cancel">&lt;&lt; Cancel and continue Shopping</button>
-                <div class="row item-preview">
-                        <div class="col-sm-2 text-left">
-                            <img class="checkout-thumbnail" src="/images/covalence-store-misc-14.png" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <p>Covalence Mug</p>
-                            <button type="button" class="btn btn-sm remove-button">remove</button>
-                        </div>
-                        <div class="col-sm-3 text-right cart-price">
-                            $15
-                        </div>
-                    </div>
-                    <div class="row item-preview">
-                        <div class="col-sm-2 text-left">
-                            <img class="checkout-thumbnail" src="/images/covalence-store-apparel-09.png" alt="">
-                        </div>
-                        <div class="col-sm-7">
-                            <p>Covalence T-Shirt</p>
-                            <button type="button" class="remove-button">remove</button>
-                        </div>
-                        <div class="col-3 text-right cart-price">
-                            $15
-                        </div>
-                    </div>
-                
-                
-                <h3>Order Summary</h3>
-            </div>
         </div>
     </div>
 </div>

@@ -22,8 +22,12 @@
                 <a class="nav-link" href="/contactus">Contact Us</a>
             </li>
         </ul>
-        <p class="text-right" id="navbar-text">Cart</p>
-        <div class="circle">2<div>
+
+        <span class="text-right cart-count" id="navbar-text">Cart</span>
+        <div class="circle">2</div>
+       
+
+
         <!-- <div class="circle" ng-controller="SingleItemController">{{ itemsInCart.length }}<div> -->
     </div>
 </nav>
@@ -38,28 +42,28 @@
                 <h5 class="slide-header">Your Shopping Cart</h5>
             </div>
             <div class="text-center">
-                <div class="row">
-                    <div class="col-2 text-left">
-                        <img class="cart-thumbnail" src="/images/covalence-store-misc-14.png" alt="">
+                <div class="row product-preview">
+                    <div class="col-3 text-left cart-thumbnail">
+                        <img class="img-fluid" src="/images/covalence-store-misc-14.png" alt="">
                     </div>
-                    <div class="col-7">
-                        <p>Covalence Mug</p>
-                        <button type="button" class="btn btn-sm remove-button">remove</button>
+                    <div class="col-6 text-left">
+                        <p>Symbol Coffee Mug</p>
+                        <button type="button" class="remove-button">remove</button>
                     </div>
                     <div class="col-3 text-right cart-price">
-                        $15
+                        $22
                     </div>
                 </div>
-                <div class="row">
-                        <div class="col-2 text-left">
-                            <img class="cart-thumbnail" src="/images/covalence-store-apparel-09.png" alt="">
+                <div class="row product-preview">
+                        <div class="col-3 text-left cart-thumbnail">
+                            <img class="img-fluid" src="/images/covalence-store-apparel-09.png" alt="">
                         </div>
-                        <div class="col-7">
-                            <p>Covalence T-Shirt</p>
+                        <div class="col-6 text-left">
+                            <p>Grey Logo Tee</p>
                             <button type="button" class="remove-button">remove</button>
                         </div>
                         <div class="col-3 text-right cart-price">
-                            $15
+                            $25
                         </div>
                     </div>
                 <hr>
@@ -68,7 +72,7 @@
                         <h5 class="slide-header">Total Price</h5>
                     </div>
                     <div class="col-6 text-right">
-                        <h5 class="slide-header">$45</h5>
+                        <h5 class="slide-header">$47</h5>
                     </div>
     
                 </div>
